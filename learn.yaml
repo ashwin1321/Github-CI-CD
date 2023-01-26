@@ -1,0 +1,36 @@
+# YAML is similar to JSON.
+# but information stored in key value pair
+# yaml can have comments unlike json
+
+# test1: scripts1
+# test12: scripts2
+
+#  JSON equivalent to above code will be
+# {
+#   test1: "scripts1",
+#   test2: "scripts2"
+# }
+
+#nested object
+# myapp:
+#   service: my-projects
+#   test1: scripts1
+
+# lists in YAML
+# myapp:
+#   service: "my-projects"
+#   test1: scripts1
+#   myArray: [1, 2, 3, 4, 5]
+#   myArray1:
+#     - key2: value2
+#       keyRandom2: valueRandom2
+#     - key1: value1
+#       keyRandom1: valueRandom1
+# YAML validator
+
+# MULTILINE STRINGS
+myapp:
+  service: | # use | to indicate that there are multiple lines of strings
+    my-project
+     this is a simple project
+  key1: value1
