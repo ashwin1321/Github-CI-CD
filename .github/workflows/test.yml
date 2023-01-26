@@ -4,5 +4,5 @@ jobs:
   print-output:
     runs-on: ubuntu-latest
     steps:
-      - run: console.log("Hello World!!")
-      - run: console.log("Step")
+      - run: echo "Hello World!!"
+      - run: echo "Step"
