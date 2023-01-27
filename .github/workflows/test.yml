@@ -9,6 +9,8 @@ jobs:
         with:
           node-version: 16
       - name: Build the project
-        run: yarn run build
+        run: |
+          yarn install
+          yarn run build
       - name: Setup Finish
         run: echo  "done"
