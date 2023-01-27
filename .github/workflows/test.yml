@@ -10,6 +10,7 @@ jobs:
           node-version: 16
       - name: Build the project
         run: |
+          yarn cache clean 
           yarn install
           yarn run build
       - name: Deploy the project
