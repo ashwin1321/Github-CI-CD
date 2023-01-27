@@ -34,3 +34,21 @@ myapp:
     my-project
      this is a simple project
   key1: value1
+
+###### USE THIS TO DEPLOY THE ACTIONS TO THE BUILD FILE
+name: My First Github Action
+on: [push] # when this action is supposed to run
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Build the project
+        run: |
+          yarn install
+          yarn run build
+      - name: Setup Finish
+        run: echo  "done"
